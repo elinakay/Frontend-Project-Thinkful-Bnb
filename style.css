@@ -2,7 +2,6 @@
 
 body {
   font-family: "Lato", sans-serif;
-  display: grid;
 }
 
 h2 {
@@ -40,7 +39,6 @@ main img {
 .group {
   display: flex;
   flex-direction: column;
-  flex-wrap: nowrap;
 }
 
 .item {
@@ -50,34 +48,29 @@ main img {
 
 .item-double {
   flex: 2;
-  margin: 10px;
 }
 
 /* -------  Navigation ------- */
 
 header {
   background-color: #ff385c;
-  padding: 30px 30px 0 20px;
+  padding: 20px 20px 0 20px;
   text-align: center;
 }
 
 .logo {
-  display: flex;
   font-family: "Pangolin", cursive;
-  justify-content: center;
-  font-size: 72px;
+  font-size: 57px;
   color: #fff;
 }
 
 header nav {
   display: flex;
-  flex-direction: row;
   justify-content: center;
 }
 
 header nav ul {
   display: flex;
-  flex-direction: row;
 }
 
 header nav ul li {
@@ -90,24 +83,30 @@ header nav ul li a {
   padding: 0 20px 0 0;
 }
 
+header nav ul li a:hover {
+  color: #bdbdbd;
+  text-decoration: none;
+}
+
 
 /* -------  Search Form ------- */
 form {
   border: 2px solid #ff385c;
   padding: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
 
 form label {
   font-weight: bold;
-  padding-right: 10px;
 }
 
-.form-input {
+form div {
   display: flex;
   justify-content: space-between;
+}
+
+form select, form input {
+  margin-bottom: 20px;
+  width: 140px;
 }
 
 form button {
@@ -117,13 +116,6 @@ form button {
   font-size: 24px;
   padding: 15px;
   width: 100%;
-}
-
-.item {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: space-between;
 }
 
 /* -------  Footer ------- */
@@ -144,77 +136,45 @@ footer p {
 header {
   display: flex;
   justify-content: space-between;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 15px;
+  padding: 0;
 }
 
 .logo {
-  font-size: 48px;
-  padding-left: 5px;
+  font-size: 42px;
+  padding-top: 0;
+  margin: 15px 0 15px 20px;
 }
 
-form {
+form select, form input {
+  margin-bottom: 20px;
+  width: 180px;
+}
+
+header nav ul {
   align-items: center;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: 10px 10px 10px 10px;
-}
-
-form div {
-  display: flex;
-  flex-direction: column;
-}
-
-form label {
-  padding-bottom: 15px;
-  font-weight: bold;
-}
-
-.form-input {
-  padding-right: 15px;
-  justify-content: center;
-}
-
-button {
-  justify-content: center;
 }
 
 .group {
   flex-direction: row;
-  justify-content: center;
-  display: flex;
   align-items: center;
 }
 
-.item button,
-.item label,
-.item select,
-.item input {
+form {
   display: flex;
-  width: 100%;
+  justify-content: center;
+  align-items: center;
 }
 
-.item {
+form div {
+  flex-direction: column;
+}
+
+form button {
   flex: 1;
-  margin: 15px;
 }
 
-.item-double {
-  flex: 2;
-  margin: 15px;
-}
-
-header nav {
-  margin-top: 8px;
-}
-
-header nav ul li a:hover {
-  color: #bdbdbd;
-  text-decoration: none;
+form select, form input {
+  margin-bottom: 0;
 }
 
 }
