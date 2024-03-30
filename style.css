@@ -107,7 +107,7 @@ form label {
   flex-basis: 30%;
   display: flex;
   align-items: center;
-  justify-content: flex-end; /* Align labels to the end of each row */
+ /* justify-content: flex-end; */ /* Align labels to the end of each row */
 }
 
 form div {
